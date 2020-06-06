@@ -31,6 +31,6 @@ public class TaskUpdateController {
 	
 	@DeleteMapping("deleteTask/{taskId}")
 	public void deleteTask(@RequestParam int taskId) {
-		 proxy.deleteTask(Id);
+		 proxy.deleteTask(taskId);
 	}
 }
