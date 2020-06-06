@@ -29,8 +29,8 @@ public class TaskUpdateController {
 		return proxy.updateTask(t);
 	}
 	
-	@DeleteMapping("deleteTask")
-	public void deleteTask(@RequestParam int Id) {
+	@DeleteMapping("deleteTask/{taskId}")
+	public void deleteTask(@RequestParam int taskId) {
 		 proxy.deleteTask(Id);
 	}
 }

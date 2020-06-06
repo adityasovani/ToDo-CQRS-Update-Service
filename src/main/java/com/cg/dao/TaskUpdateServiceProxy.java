@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.cg.bean.Task;
 
-@FeignClient(name = "ToDoList-service")
+@FeignClient(name = "ToDoList-service", url = "https://todo-cqrs-update-service.herokuapp.com/")
 public interface TaskUpdateServiceProxy {
 
 	@PostMapping("addTask")
